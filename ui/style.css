@@ -10,23 +10,17 @@
 * { box-sizing: border-box; }
 
 body {
-<<<<<<< HEAD
-=======
   min-height: 100vh;
   background: linear-gradient(45deg, #696969, #d3d3d3);
->>>>>>> Lekstuga
   margin: 0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   line-height: 1.5;
 }
 
-<<<<<<< HEAD
-=======
 h1::first-letter {
   border-bottom: 3px solid #000000;
 }
 
->>>>>>> Lekstuga
 .container {
   max-width: var(--max);
   margin: 0 auto;
@@ -47,8 +41,6 @@ h1::first-letter {
   font-weight: 700;
 }
 
-<<<<<<< HEAD
-=======
 input {
   border-radius: 999px;
   padding-left: 20px;
@@ -56,7 +48,6 @@ input {
   box-shadow: 0 0 10px 5px #00000046;
 }
 
->>>>>>> Lekstuga
 .nav-list {
   list-style: none;
   padding: 0;
@@ -82,11 +73,8 @@ input {
 .card {
   border: var(--border);
   padding: var(--space-2);
-<<<<<<< HEAD
-=======
   border-color: rgb(139, 139, 139);
   border-radius: 20px 0px 0px 0px;
->>>>>>> Lekstuga
 }
 
 .field {
@@ -99,10 +87,7 @@ input {
   padding: 0.6rem 1rem;
   border: var(--border);
   text-decoration: none;
-<<<<<<< HEAD
-=======
   border-radius: 20px 0px 0px 0px;
->>>>>>> Lekstuga
 }
 
 button.button {
