@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventHub Mini</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <script src="script.js"></script>
+  <header class="site-header">
+    <div class="container">
+      <p class="brand">EventHub Mini</p>
+      <nav aria-label="Huvudnavigering">
+        <ul class="nav-list">
+          <li><a href="index.html" aria-current="page">Start</a></li>
+          <li><a href="page2.html">Eventdetalj</a></li>
+          <li><a href="components.html">Components</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section aria-labelledby="hero-title" class="hero">
+      <h1 id="hero-title">Hitta ditt nästa event</h1>
+      <p>Bläddra bland kommande event, öppna detaljer och köp en biljett på mindre än en minut.</p>
+      <p><a class="button" href="page2.html">Se ett event</a></p>
+    </section>
+
+    <section aria-labelledby="list-title" class="stack">
+      <h2 id="list-title">Kommande event</h2>
+
+      <form class="stack" action="#" method="get">
+        <div class="field">
+          <label for="search">Sök event</label>
+          <input id="search" name="search" type="search" autocomplete="off" placeholder="Sök på titel eller venue">
+        </div>
+      </form>
+
+      <div class="grid" id="eventList" aria-live="polite">
+        <article class="card" data-title="Afterwork Tech Meetup" data-venue="Göteborg Arena">
+          <h3>Afterwork Tech Meetup</h3>
+          <p><strong>Datum:</strong> 2026-03-04</p>
+          <p><strong>Venue:</strong> Göteborg Arena</p>
+          <p><strong>Pris:</strong> 149 kr</p>
+          <p><a href="page2.html">Öppna detaljer</a></p>
+        </article>
+
+        <article class="card" data-title="Indie Live Night" data-venue="Pustervik">
+          <h3>Indie Live Night</h3>
+          <p><strong>Datum:</strong> 2026-03-10</p>
+          <p><strong>Venue:</strong> Pustervik</p>
+          <p><strong>Pris:</strong> 299 kr</p>
+          <p><a href="page2.html">Öppna detaljer</a></p>
+        </article>
+
+        <article class="card" data-title="Frontend Workshop" data-venue="Lindholmen Science Park">
+          <h3>Frontend Workshop</h3>
+          <p><strong>Datum:</strong> 2026-03-18</p>
+          <p><strong>Venue:</strong> Lindholmen Science Park</p>
+          <p><strong>Pris:</strong> 0 kr</p>
+          <p><a href="page2.html">Öppna detaljer</a></p>
+        </article>
+
+        <article class="card" data-title="Retro Game Expo" data-venue="Mässan">
+          <h3>Retro Game Expo</h3>
+          <p><strong>Datum:</strong> 2026-03-22</p>
+          <p><strong>Venue:</strong> Mässan</p>
+          <p><strong>Pris:</strong> 199 kr</p>
+          <p><a href="page2.html">Öppna detaljer</a></p>
+        </article>
+      </div>
+
+      <section aria-labelledby="overview-title" class="stack">
+        <h2 id="overview-title">Översikt (simulerad historik)</h2>
+        <table>
+          <caption>Nyliga biljettköp</caption>
+          <thead>
+            <tr>
+              <th scope="col">Order-ID</th>
+              <th scope="col">Event</th>
+              <th scope="col">Antal</th>
+              <th scope="col">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>EH-1042</td>
+              <td>Afterwork Tech Meetup</td>
+              <td>2</td>
+              <td>Confirmed</td>
+            </tr>
+            <tr>
+              <td>EH-1043</td>
+              <td>Indie Live Night</td>
+              <td>1</td>
+              <td>Pending</td>
+            </tr>
+            <tr>
+              <td>EH-1044</td>
+              <td>Frontend Workshop</td>
+              <td>1</td>
+              <td>Cancelled</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section aria-labelledby="help-title" class="stack">
+        <h2 id="help-title">Hjälp & regler</h2>
+        <details>
+          <summary>Hur funkar biljetter?</summary>
+          <p>Du väljer event, fyller i formuläret och skickar. I en riktig lösning skulle du få ett mail med en QR-kod.</p>
+        </details>
+        <details>
+          <summary>Avbokning</summary>
+          <p>Avbokning är möjlig fram till 24 timmar innan start. I prototypen är detta endast text.</p>
+        </details>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>EventHub Mini – skolprototyp</p>
+    </div>
+  </footer>
+
+</body>
+</html>

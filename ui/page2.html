@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventdetalj – EventHub Mini</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <p class="brand">EventHub Mini</p>
+      <nav aria-label="Huvudnavigering">
+        <ul class="nav-list">
+          <li><a href="index.html">Start</a></li>
+          <li><a href="page2.html" aria-current="page">Eventdetalj</a></li>
+          <li><a href="components.html">Components</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container stack">
+    <section aria-labelledby="event-title" class="card">
+      <h1 id="event-title">Afterwork Tech Meetup</h1>
+      <p><strong>Datum:</strong> 2026-03-04</p>
+      <p><strong>Tid:</strong> 17:30–20:00</p>
+      <p><strong>Venue:</strong> Göteborg Arena</p>
+      <p><strong>Pris:</strong> 149 kr</p>
+      <p>En enkel meetup för utvecklare som vill snacka frontend, backend och “varför funkar det inte i prod”.</p>
+    </section>
+
+    <section aria-labelledby="purchase-title" class="stack">
+      <h2 id="purchase-title">Köp biljett</h2>
+
+      <form action="index.html" method="" class="card stack">
+        <div class="field">
+          <label for="fullName">Fullständigt namn</label>
+          <input id="fullName" name="fullName" type="text" required>
+        </div>
+
+        <div class="field">
+          <label for="email">E-post</label>
+          <input id="email" name="email" type="email" required>
+        </div>
+
+        <div class="field">
+          <label for="ticketType">Biljettyp</label>
+          <select id="ticketType" name="ticketType" required>
+            <option value="">-- Välj biljettyp --</option>
+            <option value="standard">Standard</option>
+            <option value="student">Student</option>
+            <option value="vip">VIP</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="quantity">Antal biljetter</label>
+          <input id="quantity" name="quantity" type="number" min="1" max="6" required>
+        </div>
+
+        <!-- <button type="submit" class="button">Skicka köp</button> -->
+         <button onclick="alert('Biljett köpt! Du skickas nu tillbaka till startsidan.')">
+            Klicka här
+          </button>
+
+        <p class="hint">Efter submit skulle en riktig app skapa en order och visa en bekräftelse.</p>
+      </form>
+    </section>
+
+    <section aria-labelledby="rules-title" class="stack">
+      <h2 id="rules-title">Regler</h2>
+      <details>
+        <summary>Åldersgräns</summary>
+        <p>18+. Legitimation kan krävas.</p>
+      </details>
+      <details>
+        <summary>Återköp</summary>
+        <p>Återköp är möjligt fram till 24 timmar innan start.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><a href="index.html">Tillbaka till listan</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
