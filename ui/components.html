@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Components – EventHub Mini</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <p class="brand">EventHub Mini</p>
+      <nav aria-label="Huvudnavigering">
+        <ul class="nav-list">
+          <li><a href="index.html">Start</a></li>
+          <li><a href="page2.html">Eventdetalj</a></li>
+          <li><a href="components.html" aria-current="page">Components</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container stack">
+    <h1>Component showcase</h1>
+
+    <section aria-labelledby="buttons-title" class="stack">
+      <h2 id="buttons-title">Buttons & länkar</h2>
+      <p><a class="button" href="page2.html">Primär CTA</a></p>
+      <p><a href="index.html">Vanlig länk</a></p>
+    </section>
+
+    <section aria-labelledby="cards-title" class="stack">
+      <h2 id="cards-title">Cards</h2>
+      <article class="card">
+        <h3>Exempel-card</h3>
+        <p>Det här är en card med rubrik och text.</p>
+      </article>
+    </section>
+
+    <section aria-labelledby="forms-title" class="stack">
+      <h2 id="forms-title">Form patterns</h2>
+      <form action="#" method="post" class="card stack">
+        <div class="field">
+          <label for="demoText">Text</label>
+          <input id="demoText" name="demoText" type="text">
+        </div>
+
+        <div class="field">
+          <label for="demoEmail">E-post</label>
+          <input id="demoEmail" name="demoEmail" type="email">
+        </div>
+
+        <div class="field">
+          <label for="demoSelect">Select</label>
+          <select id="demoSelect" name="demoSelect">
+            <option value="">-- Välj --</option>
+            <option value="a">A</option>
+            <option value="b">B</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="demoNumber">Number</label>
+          <input id="demoNumber" name="demoNumber" type="number" min="0" max="10">
+        </div>
+
+        <button type="submit" class="button">Submit</button>
+      </form>
+    </section>
+
+    <section aria-labelledby="table-title" class="stack">
+      <h2 id="table-title">Table</h2>
+      <table>
+        <caption>Exempeldata</caption>
+        <thead>
+          <tr>
+            <th scope="col">A</th>
+            <th scope="col">B</th>
+            <th scope="col">C</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>2</td><td>3</td></tr>
+          <tr><td>4</td><td>5</td><td>6</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>EventHub Mini – components</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
