@@ -12,10 +12,7 @@
 
   function applyFilter() {
     const q = normalize(input.value);
-<<<<<<< HEAD
-=======
-    console.log(input.value)
->>>>>>> Lekstuga
+
     cards.forEach(card => {
       const title = normalize(card.getAttribute("data-title"));
       const venue = normalize(card.getAttribute("data-venue"));
