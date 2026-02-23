@@ -12,6 +12,7 @@
 
   function applyFilter() {
     const q = normalize(input.value);
+    console.log(input.value)
     cards.forEach(card => {
       const title = normalize(card.getAttribute("data-title"));
       const venue = normalize(card.getAttribute("data-venue"));
